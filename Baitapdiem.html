@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: rgb(210, 201, 201);
+            width: 500px;
+            height: 400px;
+            margin-left: 100px;
+            padding: 10px;
+            
+        }
+        h1 {
+            text-align: center;
+        }
+        .nhap {
+            display: flex;
+            padding: 10px;
+            height: 40px;
+        }
+        input {
+            width: 300px;
+        }
+        .nhap>label {
+            margin-top: 15px;
+            margin-right: 20px;
+            max-width: 70px;
+            font-size: larger;
+        }
+        .year>label {
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 50px;
+            max-width: 70px;
+            font-size: larger;
+        }
+        select {
+            height: 40px;
+        }
+        .btn>input {
+            max-width: 100px;
+            margin-top: 70px;
+            margin-left: 100px;
+        }
+        #XL{
+            font-size: 40px;
+            margin-left: 40px;
+            margin-top: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>BẢNG ĐIỂM CỦA EM</h1>
+            <div class="nhap">
+                <label for="Semester1">Semester1</label>
+                <input type="number" name="Semester1" id="s1">
+            </div>
+            <div class="nhap">
+                <label for="Semester2">Semester2</label>
+                <input type="number" name="Semester2" id="s2">
+            </div>
+            <div class="year">
+                <label for="Year">Year</label>
+                <select name="year" id="year">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="nhap">
+                <label for="rs">Sumerise</label>
+                <input type="text" name="rs" id="kq">
+            </div>
+            <div class="btn">
+                <input type="button" name="OK" value="OK" id="OK" onclick="myFunction1()">
+                <input type="button" name="Cancel" value="Cancel" id="Cancel" onclick="myFunction2()">
+            </div>
+            <div id="XL"></div>
+        </form>
+    </div>
+    <script src="baitapdiem.js"></script>
+</body>
+</html>
