@@ -7,36 +7,46 @@ function myFunction1() {
     // Tính tổng điểm
     switch (year) {
         case 1:
+            sum = (s1 + (s2*2)) / 3;
+            break;
         case 2:
+            sum = ((s1*2) + (s2*3)) / 5
+            break;
         case 3:
-            sum = (s1 + s2) / 2;
+            sum = ((s1*3) + (s2*4)) / 7;
             break;
         default:
             sum = 0;
             break;
     }
     
-    // Xác định loại học sinh
+  
     var result = "";
     if (sum >= 9) {
         result = "Học sinh xuất sắc";
+        document.getElementById('XL').style.color = "yellow";
     } else if (sum >= 8) {
         result = "Học sinh giỏi";
+        document.getElementById('XL').style.color = "green";
     } else if (sum >= 6.5) {
         result = "Học sinh khá";
+        document.getElementById('XL').style.color = "orange";
     } else if (sum >= 5) {
         result = "Học sinh trung bình";
-    } else {
+        document.getElementById('XL').style.color = "blue";
+    } else if(sum>=0) {
         result = "Học sinh yếu";
+        document.getElementById('XL').style.color = "red";
+    }else{
+        result="Khong xac dinh"
     }
     
-    // Cập nhật ô Sumerise và thẻ kết quả chi tiết
-    document.getElementById('kq').value = sum.toFixed(2);
+    
+    document.getElementById('kq').value = sum;
     document.getElementById('XL').innerHTML = result;
-    document.getElementById('XL').style.color = "red";
+   
 }
 
 function myFunction2() {
-    // Implement functionality for Cancel button if needed
     alert("Cancel button clicked");
 }

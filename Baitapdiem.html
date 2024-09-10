@@ -38,7 +38,8 @@
             font-size: larger;
         }
         select {
-            height: 40px;
+            max-width: 70px;
+            margin-left: -4px;
         }
         .btn>input {
             max-width: 100px;
@@ -57,15 +58,15 @@
         <form>
             <h1>BẢNG ĐIỂM CỦA EM</h1>
             <div class="nhap">
-                <label for="Semester1">Semester1</label>
+                <label for="Semester1">Semester1: </label>
                 <input type="number" name="Semester1" id="s1">
             </div>
             <div class="nhap">
-                <label for="Semester2">Semester2</label>
+                <label for="Semester2">Semester2: </label>
                 <input type="number" name="Semester2" id="s2">
             </div>
             <div class="year">
-                <label for="Year">Year</label>
+                <label for="Year">Year: </label>
                 <select name="year" id="year">
                     <option value="1">1</option>
                     <option value="2">2</option>
@@ -73,8 +74,8 @@
                 </select>
             </div>
             <div class="nhap">
-                <label for="rs">Sumerise</label>
-                <input type="text" name="rs" id="kq">
+                <label for="rs">Sumerise: </label>
+                <input type="" name="sum" id="kq">
             </div>
             <div class="btn">
                 <input type="button" name="OK" value="OK" id="OK" onclick="myFunction1()">
